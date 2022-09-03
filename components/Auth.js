@@ -21,8 +21,8 @@ export default function Auth() {
   return (
     <div className="row flex-center flex">
       <div className="col-6 form-widget">
-        <h1 className="header">Supabase + Next.js</h1>
-        <p className="description">
+        <h1 className="text-purple-700 text-xl font-medium">Supabase + Next.js</h1>
+        <p className="text-gray-500">
           Sign in via magic link with your email below
         </p>
         <div>
