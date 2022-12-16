@@ -12,7 +12,9 @@ export default function Auth() {
       if (error) throw error
       alert('Check your email for the login link!')
     } catch (error) {
-      alert(error.error_description || error.message)
+      if (error instanceof Error) {
+        alert(`${error.name}: ${error.message}`);
+      }
     } finally {
       setLoading(false)
     }
